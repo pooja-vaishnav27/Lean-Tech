@@ -1,0 +1,17 @@
+{
+  "name": "lean_tech_assignment",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:bdd": "cucumber-js --require features/step_definitions/**/*.js features/**/*.feature"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.53.2",
+    "@types/node": "^24.0.11"
+  }
+}
