@@ -1,0 +1,84 @@
+[
+  {
+    "description": "  As a user\n  I want to be able to select 3 random items and complete the checkout flow\n  So that I can verify the happy path for purchasing products",
+    "elements": [
+      {
+        "description": "",
+        "id": "sauce-demo-checkout;successful-checkout-with-3-random-items",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Successful checkout with 3 random items",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2233371100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am logged in as a standard user",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3053884799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I add 3 random products to the cart",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 362742599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I complete the checkout process",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 586913099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see a confirmation that my order was successful",
+            "match": {
+              "location": "features\\step_definitions\\checkout.steps.js:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 545875299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "sauce-demo-checkout",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sauce Demo Checkout",
+    "tags": [],
+    "uri": "features\\checkout.feature"
+  }
+]
