@@ -1,3 +1,44 @@
+# Test Suite Setup and Execution
+
+### Overview
+
+This project uses Playwright and Cucumber.js for BDD-style end-to-end testing, following the Page Object Model (POM) pattern. It also integrates `cucumber-html-reporter` for generating user-friendly HTML reports.
+
+### Prerequisites
+
+- Node.js and npm installed
+- Chrome/Chromium browser installed
+
+### Setup
+
+1. **Install dependencies:**
+  ```sh
+  npm install
+  ```
+
+2. **Project Structure:**
+  - `features/` — Gherkin feature files and step definitions
+  - `pages/` — Page Object Model classes
+  - `generate-cucumber-report.js` — Script to generate HTML report
+  - `playwright.config.js` — Playwright configuration
+
+### Running Tests
+
+1. **Execute the BDD test suite and generate a report:**
+  ```sh
+  npx cucumber-js --format json:cucumber_report.json
+  node generate-cucumber-report.js
+  ```
+  - This will run all Cucumber scenarios and generate a `cucumber_report.json` file.
+  - The `generate-cucumber-report.js` script will convert this JSON into a user-friendly HTML report.
+
+2. **View the HTML report:**
+  - Open `cucumber_report.html` in your browser to see the test results.
+
+### Reporting
+
+- The framework uses [cucumber-html-reporter](https://www.npmjs.com/package/cucumber-html-reporter).
+- Report metadata (browser, platform, environment, etc.) is configured in `generate-cucumber-report.js`.
 
 # Lean Tech Assignment - Playwright BDD Automation
 
